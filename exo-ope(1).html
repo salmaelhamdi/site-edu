@@ -1,0 +1,91 @@
+<html>
+<head>
+     <title> des exercices des operations arithmetiques  </title>
+	 <style>
+	 body {
+  background-image: url("https://static.vecteezy.com/ti/vecteur-libre/p2/1218819-fond-papier-peint-avec-des-polygones-en-degrade-couleurs-gratuit-vectoriel.jpg");
+  background-repeat: no-repeat;
+  background-size: 37cm 18cm;
+  background-attachment: fixed;
+}
+div {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-shadow: 1px 1px black;
+  color: purple;
+}
+	 
+	 
+	 
+	 </style>
+</head>
+<body>
+<br>
+<table border="1" width="100%">
+  <tr>
+    <th width="20%" align="center" style="background-color: #FFFFFF"><font size="4" ><a href="index.html"><font color="purple"><b>L'acceuil</b></font></a></font>
+    </th>
+  </table>
+  <div><center><strong><font  size="7" color="purple"> Des exercices des operations arithmetiques</font></strong></center></div><br>
+
+<ul>
+   <li> 18 + 2 = x </li>
+ <input type="radio" > x = 25
+ <input type="radio" > x = 20
+ <input type="radio" > x = 32
+ </ul>
+ <ul>
+  <li>  45 / 5 = x   </li>
+  <input type="radio" > x = 9
+  <input type="radio" > x = 29
+  <input type="radio" > x = 7
+  </ul>
+  <ul>
+ <li> 12 * 12 = x </li>
+ <input type="radio" > x = 121
+ <input type="radio" > x = 81
+ <input type="radio" > x = 144
+ </ul>
+ <ul>
+ <li>18 - 18 = x</li>
+ <input type="radio" > x = 0
+ <input type="radio" > x = 17
+ <input type="radio" > x = 18
+ </ul>
+  <ul>
+ <li>(122 + 87) - 2 = x</li>
+ <input type="radio" > x = 11
+ <input type="radio" > x = 22
+ <input type="radio" > x = 33
+ </ul>
+  <ul>
+ <li> 2  / 2  + 1= x</li>
+ <input type="radio" > x = 0,66
+ <input type="radio" > x = 2
+ <input type="radio" > x = 4
+ </ul>
+
+<p align="left"><strong><font  size="5" color="purple"><u>Aide :</u></font></strong></p>
+
+<form name="FF">
+<input type="text">
+<select>
+	<option value="+"> +</option>
+	<option value="-"> -</option>
+	<option value="*"> x</option>
+	<option value="/"> /</option>
+</select>
+<input type="text">=
+<input type="text" onFocus="
+c1=parseInt(window.document.forms['FF'].elements[0].value);
+op=window.document.forms[0].elements[1].value;
+c2=parseInt(document.forms[0].elements[2].value);
+window.document.forms[0].elements[3].value=eval(c1+op+c2)
+">
+</form>
+ 
+
+</body>
+</html>

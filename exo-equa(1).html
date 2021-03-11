@@ -1,0 +1,185 @@
+<html>
+<head>
+     <title> des exercices des équations  </title>
+	 <style>
+	 body {
+  background-image: url("https://static.vecteezy.com/ti/vecteur-libre/p2/1218819-fond-papier-peint-avec-des-polygones-en-degrade-couleurs-gratuit-vectoriel.jpg");
+  background-repeat: no-repeat;
+  background-size: 37cm 18cm;
+  background-attachment: fixed;
+}
+div {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-shadow: 1px 1px black;
+  color: purple;
+}
+	 
+	 
+	 
+	 </style>
+</head>
+<body>
+<br>
+<table border="1" width="100%">
+  <tr>
+    <th width="20%" align="center" style="background-color: #FFFFFF"><font size="4" ><a href="index.html"><font color="purple"><b>L'acceuil</b></font></a></font>
+    </th>
+
+  </table>
+  <div><center><strong><font  size="7" color="purple"> Des exercices des equations de 2eme degre</font></strong></center></div><br>
+
+
+X<sup>2</sup> + x - 2=0 <br>
+<input id="eq1" type="text" value="0">  ==>  Solution :
+<button type="button" onclick="eq1()">correction</button>
+<p id="e1" > </p><br>
+<script type="text/Javascript">
+function eq1(){
+var text,x ;
+x=document.getElementById('eq1').value;
+if (x=='-2;1'|| x=='1;-2') 
+{ text=" la reponse est juste car delta est strictement positif";
+document.getElementById("e1").innerHTML = text;}
+else{ text=" la reponse est fausse";
+document.getElementById("e1").innerHTML = text + ",  la solution est -2;1";}
+}
+</script>
+
+X<sup>2</sup> + 3X + 2=0 <br>
+<input id="eq2" type="text" value="0" >  ==>  Solution :
+<button type="button" onClick="eq2()">correction</button>  
+<p id="e2" ></p><br> 
+<script type="text/Javascript">
+function eq2(){
+var text,x ;
+x=document.getElementById('eq2').value; 
+if (x=='-2;-1'|| x=='-1;-2') { text=" reponse juste car delta est strictement positif";
+document.getElementById("e2").innerHTML = text;}
+else{ text="reponse fausse";
+document.getElementById("e2").innerHTML = text + ", la solution est -1;-2";}
+}
+</script>
+
+X<sup>2</sup> + X + 1 =0 <br>
+<input id="eq3" type="text" value="0" >  ==>  Solution :
+<button type="button" onClick="eq3()">correction</button> 
+<p id="e3" ></p><br>
+<script type="text/Javascript">
+function eq3(){
+var text,x ;
+x=document.getElementById('eq3').value; 
+if (x=='pas de solution') { text=" reponse juste car delta est strictement négatif";
+document.getElementById("e3").innerHTML = text;
+}
+else{ text="reponse fausse ";
+document.getElementById("e3").innerHTML = text + ", pas de solution ";}}
+</script>
+
+4X<sup>2</sup>+ 4X + 1 =0 <br>
+<input id="eq4" type="text" value="0" >  ==>  Solution :
+<button type="button" onClick="eq4()">correction</button> 
+<p id="e4" ></p><br>
+<script type="text/Javascript">
+function eq4(){
+
+var text,x ;
+x=document.getElementById('eq4').value; 
+if (x=='-0,5') { text=" reponse juste l'équation est le développement d'une identité remarquable (2x + 1)^2";
+document.getElementById("e4").innerHTML = text;
+}
+else{ text="reponse fausse ";
+document.getElementById("e4").innerHTML = text + ", la solution juste est -0.5";}}
+</script>
+
+-X<sup>2</sup>+ 2X - 3 =0 <br>
+<input id="eq5" type="text" value="0" >  ==>  Solution :
+<button type="button" onClick="eq5()">correction</button> 
+<p id="e5" ></p><br>
+<script type="text/Javascript">
+function eq5(){
+
+var text,x ;
+x=document.getElementById('eq5').value; 
+if (x=='pas de solution') { text=" reponse juste car delta est strictement négatif";
+document.getElementById("e5").innerHTML = text;
+}
+else{ text="reponse fausse ";
+document.getElementById("e5").innerHTML = text + ", pas de solution";}}
+</script>
+
+
+X<sup>2</sup>+ 4X =0 <br>
+<input id="eq6" type="text" value="0" >  ==>  Solution :
+<button type="button" onClick="eq6()">correction</button> 
+<p id="e6" ></p><br>
+<script type="text/Javascript">
+function eq6(){
+
+var text,x ;
+x=document.getElementById('eq6').value; 
+if (x=='-4;0'|| x=='0;-4') { text=" reponse juste car l'équation équivaut à x(x+4) =0 , équation-produit";
+document.getElementById("e6").innerHTML = text;
+}
+else{ text="reponse fausse ";
+document.getElementById("e6").innerHTML = text + ", la solution juste est 0;-4";}}
+</script>
+
+X<sup>3</sup>+ 2X<sup>2</sup> - 3X =0 <br>
+<input id="eq7" type="text" value="0" >  ==>  Solution :
+<button type="button" onClick="eq7()">correction</button> 
+<p id="e7" ></p><br>
+<script type="text/Javascript">
+function eq7(){
+
+var text,x ;
+x=document.getElementById('eq7').value; 
+if (x=='-3;0;1'|| x=='0;-3;1' || x=='1;-3;0') { text=" reponse juste car x^3+2x²-3x= x(x²+2x-3)";
+document.getElementById("e7").innerHTML = text;
+}
+else{ text="reponse fausse ";
+document.getElementById("e7").innerHTML = text + ", la solution juste est 0;1;-3";}}
+</script>
+
+<br>
+<p align="left"><strong><font  size="5" color="purple"><u>Aide</u> :</font></strong></p>
+
+
+<script language="javascript">
+function Resoudre(){
+var a=document.getElementById('C1').value;
+var b=document.getElementById('C2').value;
+var c=document.getElementById('C3').value;
+var Delta=b*b-4*a*c;
+if(a!=0){
+	if(Delta>0){
+	x1=(-b-Math.sqrt(Delta))/(2*a);
+	x2=(-b+Math.sqrt(Delta))/(2*a);
+	Sol="Deux solutions : "+x1+" et "+x2;}
+	else{
+		if(Delta==0){Sol="Solution double :"+(-b/(2*a));}
+		else {Sol="Pas de Solutions réelles";}
+	}
+
+	}
+else{if(b!=0){Sol='solution unique : '+(-c/b);}
+	else{Sol='pas de solution ou infinité de sol';}
+	}
+document.getElementById('abc').innerHTML=Sol;
+}
+</script>
+<div class="abc">
+<h2> Résolveur d'équations de 2<sup>eme</sup> degré </h2>  
+<form>
+<input type="text" size="4" id="C1">X<sup>2</sup>+
+<input type="text" size="4" id="C2">X+
+<input type="text" size="4" id="C3">=0 <br> <br>
+<input type="button" value="Résoudre" onClick="Resoudre()"><br>
+<p id="abc"> ici s'afficheront les solutions </p>
+</form>
+</div>
+
+</body>
+</html>

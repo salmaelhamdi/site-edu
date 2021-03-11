@@ -1,0 +1,90 @@
+<html>
+<head>
+     <title> des exercices de PGCD </title>
+	 <style>
+	 body {
+  background-image: url("https://static.vecteezy.com/ti/vecteur-libre/p2/1218819-fond-papier-peint-avec-des-polygones-en-degrade-couleurs-gratuit-vectoriel.jpg");
+  background-repeat: no-repeat;
+  background-size: 37cm 18cm;
+  background-attachment: fixed;
+}
+div {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-shadow: 1px 1px black;
+  color: purple;
+}
+	 
+	 
+	 
+	 </style>
+</head>
+<body>
+<br>
+<table border="1" width="100%">
+  <tr>
+    <th width="20%" align="center" style="background-color: #FFFFFF"><font size="4" ><a href="index.html"><font color="purple"><b>L'acceuil</b></font></a></font>
+    </th>
+  </table>
+  <div><center><strong><font  size="7" color="purple"> Des exercices de PGCD </font></strong></center></div><br>
+
+
+<font size ="5">
+
+<nav id="nav1">
+<form name="exercice1">
+<label for="pgcd(20;42)">PGCD(20;42)=</label>
+<input id="pgcd(20;42)" type="number" name="pgcd(20;42)" value="0"><br>
+<button type="button" onClick="Pgcd1()">correction</button> 
+<p id="pgcd1" > </p><br>
+<label for="PGCD(145 ; 233)">PGCD(145 ; 233))=</label>
+<input id="PGCD(145 ; 233)" type="number" name="pgcd(PGCD(145 ; 233)"value="0" ><br>
+<button type="button" onClick="Pgcd2()">correction</button>  
+<p id="pgcd2" ></p><br> 
+<label for="PGCD(34 ; 58)">PGCD(34 ; 58)=</label>
+<input id="PGCD(34 ; 58)" type="number" name="PGCD(34 ; 58)"value="0" ><br>
+<button type="button" onClick="Pgcd3()">correction</button> 
+<p id="pgcd3" ></p><br>
+<label for="pgcd(785;568)">PGCD(785;568)=</label>
+<input id="pgcd(785;568)" type="number" name="pgcd(785;568)" value="0"><br>
+<button type="button" onClick="Pgcd4()">correction</button>  
+<p id="pgcd4" ></p><br>
+</nav>
+</font>
+
+<script type="text/Javascript">
+function Pgcd1() {
+var text,x ;
+x=document.getElementById('pgcd(20;42)').value; 
+if (x==2) { text=" reponse juste";
+}
+else{ text="reponse fausse";}
+document.getElementById("pgcd1").innerHTML = text;}
+function Pgcd2() {
+var text,x ;
+x=document.getElementById('PGCD(145 ; 233)').value; 
+if (x==1) { text=" reponse juste";
+}
+else{ text="reponse fausse";}
+document.getElementById("pgcd2").innerHTML = text;}
+function Pgcd3() {
+var text,x ;
+x=document.getElementById('PGCD(34 ; 58)').value; 
+if (x==2) { text=" reponse juste";
+}
+else{ text="reponse fausse";}
+document.getElementById("pgcd3").innerHTML = text;}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
