@@ -47,8 +47,8 @@ div {
 <input id="PGCD(34 ; 58)" type="number" name="PGCD(34 ; 58)"value="0" ><br>
 <button type="button" onClick="Pgcd3()">correction</button> 
 <p id="pgcd3" ></p><br>
-<label for="pgcd(785;568)">PGCD(785;568)=</label>
-<input id="pgcd(785;568)" type="number" name="pgcd(785;568)" value="0"><br>
+<label for="PGCD(765 ; 565)">PGCD(765 ; 565)=</label>
+<input id="PGCD(765 ; 565)" type="number" name="PGCD(765 ; 565)" value="0"><br>
 <button type="button" onClick="Pgcd4()">correction</button>  
 <p id="pgcd4" ></p><br>
 </nav>
@@ -76,6 +76,14 @@ if (x==2) { text=" reponse juste";
 }
 else{ text="reponse fausse";}
 document.getElementById("pgcd3").innerHTML = text;}
+	
+function Pgcd4() {
+var text,x ;
+x=document.getElementById('PGCD(765 ; 565)').value; 
+if (x==5) { text="reponse juste";
+}
+else{ text="reponse fausse";}
+document.getElementById("pgcd4").innerHTML = text;}
 </script>
 
 
